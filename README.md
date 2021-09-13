@@ -1,0 +1,1 @@
+## Day 1 exercise: group info -> motel_kids
