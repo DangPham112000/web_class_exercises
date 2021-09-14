@@ -5,8 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motel Kids</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap">
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #e4eff4;
+        }
+        h1 {
+            font-size: 70px;
+            color: #0cb19e;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #0ea08f;
+        }
+        table {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            overflow: hidden;
+            margin: 10px auto;
+            text-align: left;
+            display: inline-block;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+        }
+        thead tr {
+            background-color: #1ac4b0;
+            color: #fff;
+        }
+        tbody tr {
+            border-bottom: 1px solid #ddd;
+        }
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #1ac4b0;
+        }
+        th:first-child, td:first-child {
+            text-align: center;
+        }
+        th:nth-child(2) {
+            width: 300px;
+        }
+        th:last-child {
+            width: 70px;
+        }
+        .header {
+            background-color: #1dceb9;
+            text-align: left;
+        }
+        .header h2 {
+            margin-left: 20px;
+            display: inline-block;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <h2>Home</h2>
+    </div>
     
+    <h1>MẤY NHÓC PHÒNG TRỌ</h1>
+
+    <div class="media">
+        <img src="./images/members.jpg" alt="members" usemap="#workmap">
+    
+        <map name="workmap">
+            <area shape="rect" coords="67,38,186,347" href="./members/BeDen/BeDen.html" alt="BeDen">
+            <area shape="rect" coords="226,8,337,347" href="./members/LosAngeles/LosAngeles.html" alt="LosAngeles">
+            <area shape="rect" coords="369,28,519,343" href="./members/DarkLark/DarkLark.html" alt="DarkLark">
+            <area shape="rect" coords="524,26,679,342" href="./members/DongLai/DongLai.html" alt="DongLai">
+        </map>
+    </div>
+
+    <div>
+        <h3>Danh sách thành viên:</h3>
+        <table class="information">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th >Họ tên</th>
+                    <th>Giới tính</th>
+                </tr>
+            </thead style="background-color:red">
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Phạm Hải Đăng</td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Trần Quốc Thịnh</td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Phạm Hoàng Việt</td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Phan Khắc Thành Danh</td>
+                    <td>Nam</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
 </body>
 </html>
