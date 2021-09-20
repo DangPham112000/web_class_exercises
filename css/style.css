@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.imoji {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 9em;
+    width: 23vw;
+    height: 30vh;
+    margin: 0.5vh 0.5vw;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 7px 29px 0;
+}
+
+.imoji:nth-child(1) {
+    background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%);
+}
+
+.imoji:nth-child(2) {
+    background-image: linear-gradient(0deg, #f380c7 0%, #c01b60 100%);
+}
+
+.imoji:nth-child(3) {
+    background-image: linear-gradient(0deg, #80a8f3 0%, #1ba7c0 100%);
+}
+
+.imoji:nth-child(4) {
+    background-image: linear-gradient(0deg, #8cd132 0%, #d7eb6b 100%);
+}
+
+.imoji:nth-child(5) {
+    background-image: linear-gradient(0deg, #bea8b2 0%, #e9b8e2 100%);
+}
+
+.imoji:nth-child(6) {
+    background-image: linear-gradient(0deg, #ebbd3e 0%, #d2eb79 100%);
+}
+
+.imoji:nth-child(7) {
+    background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%);
+}
+
+.imoji:nth-child(8) {
+    background-image: linear-gradient(0deg, #f380c7 0%, #c01b60 100%);
+}
+
+.imoji:nth-child(9) {
+    background-image: linear-gradient(0deg, #80a8f3 0%, #1ba7c0 100%);
+}
+
+.imoji:nth-child(10) {
+    background-image: linear-gradient(0deg, #8cd132 0%, #d7eb6b 100%);
+}
+
+.imoji:nth-child(11) {
+    background-image: linear-gradient(0deg, #bea8b2 0%, #e9b8e2 100%);
+}
+
+.imoji:nth-child(12) {
+    background-image: linear-gradient(0deg, #ebbd3e 0%, #d2eb79 100%);
+}
+
