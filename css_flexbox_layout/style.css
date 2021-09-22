@@ -6,9 +6,9 @@ body {
 
 header {
     background-color: orange;
-    /* background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%); */
+    background-image: linear-gradient(180deg, #E8B0AC 0%, #FDBD0F 100%);
     display: block;
-    height: 80px;
+    height: 90px;
 }
 
 .main {
@@ -17,21 +17,20 @@ header {
 }
 
 .side {
-    background-color: blue;
-    /* background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%); */
-    /* flex: 3; */
+    background-color: green;
+    background-image: linear-gradient(180deg, #59B674 0%, #A3C856 100%);
     width: 250px;
 }
 
 .content {
     background-color: blueviolet;
-    /* background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%); */
+    background-image: linear-gradient(180deg, #AE8CE5 0%,#F3AEEF 50%, #F7CDEE 100%);
     flex: 1;
 }
 
 footer {
     background-color: burlywood;
-    /* background-image: linear-gradient(0deg, #80f3b4 0%, #1bc06e 100%); */
+    background-image: linear-gradient(180deg, #F3DA9C 0%, #ED9423 100%);
     display: block;
-    height: 80px;
+    height: 72px;
 }
