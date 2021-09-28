@@ -1,0 +1,10 @@
+1 điểm – Phần navigation bar
+1 điểm – Phần banner
+1 điểm – Phần Title
+1 điểm – Phần footer
+1 điểm – Layout phần main
+1 điểm – Phần menu phải.
+1 điểm – Phần content “Overview”
+1 điểm – Phần content “Prevention”
+1 điểm – Phần content “Symptoms”
+1 điểm – Hoàn thành tổng thể 100%
