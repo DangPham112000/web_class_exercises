@@ -4,44 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-    </style>
+    <title>Chess</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
     <div class="circle"></div>
 
 
-    <script>
-
-
-        function setupDragDrop(obj) {
-            obj.onmousedown = function(e) {
-                if (isNaN(parseInt(this.style.left))) {
-
-                }
-
-                this.oldX = e.clientX;
-                this.oldY = e.clientY;
-                this.isDown = true;
-            };
-
-            obj.onmouseup = function(e) {
-                this.isDown = false;
-            }
-
-            obj.onmousemove = function(e) {
-                
-            }
-        }
-
-        
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
