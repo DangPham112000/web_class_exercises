@@ -1,3 +1,12 @@
+// khi nhấc con cờ nhớ tăng z-index lên. xong rồi thì hạ xuống
+
+window.onload = function() {
+    let chesses = document.querySelectorAll(".chess");
+    for (const chess of chesses) {
+        setupDragDrop(chess);
+    }
+}
+
 function setupDragDrop(obj) {
     obj.onmousedown = function(e) {
         if (isNaN(parseInt(this.style.left))) {
@@ -10,12 +19,14 @@ function setupDragDrop(obj) {
 
         this.oldX = e.clientX;
         this.oldY = e.clientY;
-        console.log(e);
         this.isDown = true;
+        this.style['z-index'] = 2;
     };
 
     obj.onmouseup = function() {
         this.isDown = false;
+        
+        this.style['z-index'] = 1;
     };
 
     obj.onmousemove = function(e) {
@@ -31,7 +42,3 @@ function setupDragDrop(obj) {
         }
     }; 
 }
-
-const circle = document.querySelector('.circle');
-
-setupDragDrop(circle);
