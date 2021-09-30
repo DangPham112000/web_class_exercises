@@ -9,6 +9,8 @@ for (let i=0; i<8; i++) {
     }
 }
 
+var whoPlay = 'white';
+
 window.onload = function() {
     let chesses = document.querySelectorAll(".chess");
     for (const chess of chesses) {
@@ -40,12 +42,27 @@ function setupDragDrop(obj) {
     };
 
     obj.onmouseup = function(e) {
-        this.superNewX = e.clientX;
-        this.superNewY = e.clientY;
-        this.isDown = false;
-        
-        this.style['z-index'] = 1;
-        move(obj);
+        if (this.isDown) {
+            this.superNewX = e.clientX;
+            this.superNewY = e.clientY;
+            this.isDown = false;
+            
+            this.style['z-index'] = 1;
+            
+            if (whoPlay === this.classList[2]) {
+                if (move(obj)) {
+                    if (whoPlay === 'white') {
+                        whoPlay = 'black';
+                    } else {
+                        whoPlay = 'white';
+                    }
+                }
+            } else {
+                alert("This is " + whoPlay + "'s turn");
+                obj.style.left = "50%";
+                obj.style.top = "50%";
+            }
+        }
     };
 
     obj.onmousemove = function(e) {
@@ -72,6 +89,7 @@ function setupDragDrop(obj) {
 }
 
 function move(obj) {
+    let isMove = true;
     let superdx = obj.superNewX - obj.superOldX;
     let superdy = obj.superNewY - obj.superOldY;
     // console.log(superdx,superdy);
@@ -90,18 +108,19 @@ function move(obj) {
                     {
                         stepX = 0;
                         stepY = 0;
+                        isMove = false;
                     }
                     // console.log(obj);
                     // console.log(boxes[i - stepY][j + stepX]);
                     boxes[i - stepY][j + stepX].appendChild(obj);
                     obj.style.left = "50%";
                     obj.style.top = "50%";
-                    return;
+                    return isMove;
                 }
                 boxes[i][j].appendChild(obj);
                 obj.style.left = "50%";
                 obj.style.top = "50%";
-                return;
+                return false;
             }
         }
     }    
@@ -225,6 +244,7 @@ function canIMove(obj, stepX, stepY, i, j) {
                 if (boxes[i - stepY][j + stepX].children.length === 2) {
                     return canIEat(obj, stepX, stepY, i, j);
                 }
+                return true;
             }
             return false;
         
@@ -237,6 +257,10 @@ function canIEat(obj, stepX, stepY, i, j) {
     if ((boxes[i - stepY][j + stepX].children.length === 2) &&
         (boxes[i - stepY][j + stepX].children[1].classList[2] !== obj.classList[2])) // different faction
     {
+        if (boxes[i - stepY][j + stepX].children[1].classList[1] === 'king') {
+            alert(whoPlay + ' win');
+            location.reload();
+        }
         boxes[i - stepY][j + stepX].children[1].remove();
         return true;
     }
