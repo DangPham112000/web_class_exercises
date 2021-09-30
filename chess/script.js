@@ -92,8 +92,7 @@ function move(obj) {
                 }
             }
         }
-    }
-    
+    }    
 }
 
 function canIMove(obj, stepX, stepY) {
