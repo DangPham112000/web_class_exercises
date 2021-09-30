@@ -19,17 +19,6 @@ body {
     align-items: center;
 }
 
-.circle {
-    /* display: none; */
-    z-index: 1;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-}
-
-
 .chess-board {
     width: 644px;
     height: 644px;
@@ -68,7 +57,8 @@ body {
 }
 
 .text {
-    display: none;
+    /* display: none; */
+    color: rgb(160, 142, 142);
     position: absolute;
     top: 5px;
     left: 5px;
@@ -76,10 +66,12 @@ body {
 
 .chess {
     position: absolute;
-    font-size: 60px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
     z-index: 1;
-    /* color: #000; */
-    /* background-color: #fff; */
 }
 
 #a1 {
