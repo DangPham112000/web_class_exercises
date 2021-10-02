@@ -24,34 +24,34 @@
                 
                 <div class="input-wrap1">
                     <label for="result">Kết quả</label>
-                    <input type="text" id="result" name="result">
+                    <input type="text" id="result" name="result" readonly="readonly">
                 </div>
             </div>
             <div class="wrap2">
                 <div class="input-func">
                     <div class="input-wrap2">
-                        <input type="radio" id="increase" name="func" value="">
+                        <input type="radio" id="increase" name="func" value="increase">
                         <label for="increase">Cộng</label>
                     </div>
                     <div class="input-wrap2">
-                        <input type="radio" id="decrease" name="func" value="">
+                        <input type="radio" id="decrease" name="func" value="decrease">
                         <label for="decrease">Trừ</label>
                     </div>
                     <div class="input-wrap2">
-                        <input type="radio" id="multiple" name="func" value="">
+                        <input type="radio" id="multiple" name="func" value="multiple">
                         <label for="multiple">Nhân</label>
                     </div>
                     <div class="input-wrap2">
-                        <input type="radio" id="divide" name="func" value="">
+                        <input type="radio" id="divide" name="func" value="divide">
                         <label for="divide">Chia</label>
                     </div>
                 </div>
-                <button>Tính</button>
+                <button id="confirm">Tính</button>
             </div>
         </div>
         <div class="annoucement-wrap">            
-            <label for="annoucement">Thông báo</label>
-            <input type="text" id="annoucement" name="annoucement" value="test">
+            <p>Thông báo</p>
+            <p class="annoucement" id="annoucement"></p>
         </div>
     </div>
     <script src="./script.js"></script>

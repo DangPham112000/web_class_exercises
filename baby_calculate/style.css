@@ -7,15 +7,18 @@ body {
     height: 100vh;
 }
 
+p {
+    margin: 0;
+}
+
 .container {
+    width: 440px;
     display: flex;
     flex-direction: column;
-
 }
 
 .wrap {
     display: flex;
-
 }
 
 .wrap1 {
@@ -35,8 +38,7 @@ body {
 
 .input-func {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr;    
 }
 
 .input-wrap2 {
@@ -45,10 +47,20 @@ body {
 
 .wrap2 button {
     margin: 15px 20px;
+    cursor: pointer;
 }
-.annoucement-wrap input {
+
+.annoucement-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.annoucement-wrap .annoucement {
     border: none;
-    margin-top: 10px;
     margin-left: 10px;
     color: red;
+}
+
+#result:focus {
+    outline: none;
 }
