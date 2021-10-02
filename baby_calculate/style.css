@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrap {
+    display: flex;
+
+}
+
+.wrap1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrap1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.input-wrap1 label {
+    margin: 0 10px 0 0;
+}
+
+.input-func {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.input-wrap2 {
+    margin: 10px;
+}
+
+.wrap2 button {
+    margin: 15px 20px;
+}
+.annoucement-wrap input {
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: red;
+}

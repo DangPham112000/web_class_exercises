@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Calculate</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Bé tập tính</h1>
+        <div class="wrap">
+            <div class="wrap1">
+                <div class="input-wrap1">
+                    <label for="1stnumber">Số thứ nhất</label>
+                    <input type="text" id="1stnumber" name="1stnumber">
+                </div>
+                
+                <div class="input-wrap1">
+                    <label for="2ndnumber">Số thứ hai</label>
+                    <input type="text" id="2ndnumber" name="2ndnumber">
+                </div>
+                
+                <div class="input-wrap1">
+                    <label for="result">Kết quả</label>
+                    <input type="text" id="result" name="result">
+                </div>
+            </div>
+            <div class="wrap2">
+                <div class="input-func">
+                    <div class="input-wrap2">
+                        <input type="radio" id="increase" name="func" value="">
+                        <label for="increase">Cộng</label>
+                    </div>
+                    <div class="input-wrap2">
+                        <input type="radio" id="decrease" name="func" value="">
+                        <label for="decrease">Trừ</label>
+                    </div>
+                    <div class="input-wrap2">
+                        <input type="radio" id="multiple" name="func" value="">
+                        <label for="multiple">Nhân</label>
+                    </div>
+                    <div class="input-wrap2">
+                        <input type="radio" id="divide" name="func" value="">
+                        <label for="divide">Chia</label>
+                    </div>
+                </div>
+                <button>Tính</button>
+            </div>
+        </div>
+        <div class="annoucement-wrap">            
+            <label for="annoucement">Thông báo</label>
+            <input type="text" id="annoucement" name="annoucement" value="test">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
