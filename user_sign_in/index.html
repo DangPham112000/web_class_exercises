@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User sign up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class='login-box'>
+        <div class='nav'>
+            <div class='login login-title selected'>Login</div>
+            <div class="login login-title fade selected">Register</div>
+            <div class="regisger register-title">Register</div>
+            <div class='regisger register-title fade'>Login</div>
+        </div>
+        <form class='login login-form selected'>
+            <span class='title'>Please Enter Your Login Details:</span>
+            <div class='input'>
+                <label for='log-username'>Username</label>
+                <input type='text' name='log-username' id='log-username'/>
+                <span class="error">Loi</span>
+            </div>
+            <div class='input'>
+                <label for='log-password'>Password</label>
+                <input type='password' name='log-password' id='log-password'/>
+            </div>
+            <div class='input submit'>
+                <input type='submit' name='login' id='login' value='Login' />
+            </div>
+        </form>
+        <form class='register register-form'>
+            <span class='title'>Please Register to Login:</span>
+            <div class='input'>
+                <label for='reg-fullname'>Fullname</label>
+                <input type='text' name='reg-fullname' id='reg-fullname'/>
+                <span class="error">Loi dinh dang</span>
+            </div>
+            <div class='input'>
+                <label for='reg-username'>Username</label>
+                <input type='text' name='reg-username' id='reg-username'/>
+            </div>
+            <div class='input'>
+                <label for='reg-password'>Password</label>
+                <input type='password' name='reg-password' id='reg-password'/>
+            </div>
+            <div class='input'>
+                <label for='reg-co-password'>Confirm password</label>
+                <input type='password' name='reg-co-password' id='reg-co-password'/>
+            </div>
+            <div class='input'>
+                <label for='reg-email'>E-Mail address</label>
+                <input type='email' name='reg-email' id='reg-email'/>
+            </div>
+            <div class='input'>
+                <label for='reg-phone'>Phone number</label>
+                <input type='text' name='reg-phone' id='reg-phone'/>
+            </div>
+            <div class='input'>
+                <label for='reg-date'>Date of birth</label>
+                <input type='date' name='reg-date' id='reg-date'/>
+            </div>
+            <div class='input submit'>
+                <input type='submit' name='register' id='register' value='Register' />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
