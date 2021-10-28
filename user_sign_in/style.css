@@ -68,6 +68,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 
 .input.submit > input:hover {
