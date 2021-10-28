@@ -1,4 +1,3 @@
-
 const usernameRegex = /^[a-zA-Z0-9]+$/;
 
 $('document').ready(function () {
@@ -23,12 +22,12 @@ function validationLogin() {
     $('#log-username').blur(function() { 
         valiUsername($(this)); 
     });
-    $('#log-username').focus(removeError);
+    $('#log-username').focus(removeElementError);
 
     $('#log-password').blur(function() { 
         valiPassword($(this)); 
     });
-    $('#log-password').focus(removeError);
+    $('#log-password').focus(removeElementError);
 
     $('.login-form').submit(function(event) {
         event.preventDefault();
@@ -37,8 +36,9 @@ function validationLogin() {
         valiPassword($('#log-password'));
     });
 
+    $('.login').submit((event) => { event.preventDefault(); })
     $('.login').mousedown(function() {
-        
+        removeAllError();
     });
 }
 
@@ -58,12 +58,14 @@ function valiPassword(element) {
     }
 }
 
-function removeError(element) {
-    const ele = element || $(this);
-    console.log(element || $(this));
-    if (ele.next('.error')) {
-        ele.next('.error').remove();
+function removeElementError() {
+    if ($(this).next('.error')) {
+        $(this).next('.error').remove();
     }
+}
+
+function removeAllError() {
+    $('.error').remove();
 }
 
 function printError(element, text) {
