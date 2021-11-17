@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body p {
+    flex: 1;
+}
