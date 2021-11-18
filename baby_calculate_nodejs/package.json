@@ -1,0 +1,18 @@
+{
+  "name": "baby_calculate_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverexp.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon serverexp.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
