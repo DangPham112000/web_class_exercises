@@ -1,3 +1,5 @@
+exports.html = (fullname, email, phone) => `
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +25,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a id="home-nav" class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -35,88 +37,28 @@
             </div>
         </div>
 
-
-        <div class="row mt-4">
-            <div class="col">
-                <h1 class="text-center mt-4">Run for your life 2021</h1>
-                <h4 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
-            </div>
-        </div>
-
         <div class="row mt-5">
-            <div class="col-6">
-                <img class="img-fluid img-thumbnail"
-                    src="https://cdn.vox-cdn.com/thumbor/KO_gWQtcDEpfVrmVFuJnb9EYHo0=/0x40:1000x790/1200x800/filters:focal(0x40:1000x790)/cdn.vox-cdn.com/uploads/chorus_image/image/46889290/shutterstock_266758136.0.0.jpg"
-                    alt="run-picture">
-            </div>
-            <div class="col-6">
-                <h3 class="">Sumary Conference</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur expedita, aperiam, placeat neque
-                    debitis fugit nisi dignissimos quasi magni unde ipsam at labore incidunt ullam repudiandae quo totam
-                    deleniti odit!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur expedita, aperiam, placeat neque
-                    debitis fugit nisi dignissimos quasi magni unde ipsam at labore incidunt ullam repudiandae quo totam
-                    deleniti odit!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur expedita, aperiam, placeat neque
-                    debitis fugit nisi dignissimos quasi magni unde ipsam at labore incidunt ullam repudiandae quo totam
-                    deleniti odit!</p>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center">Moment in Conference</h2>
-                        <h6 class="text-center">Some picture of Conference</h6>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col px-5">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100"
-                                        src="https://nexo.exdomain.net/image/cache/catalog/slider/01-o-750x500.jpg"
-                                        alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100"
-                                        src="https://nexo.exdomain.net/image/cache/catalog/slider/04-o-750x500.jpg"
-                                        alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100"
-                                        src="https://nexo.exdomain.net/image/cache/catalog/slider/05-o-750x500.jpg"
-                                        alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+            <div class="col-8 mx-auto">
+                <div class="card text-center">
+                    <h2 class="card-header">Congratulation</h2>
+                    <div class="card-body">
+                        <h5 class="card-title">We have received your information</h5>
+                        <p class="card-text">${fullname}</p>
+                        <p class="card-text">${email}</p>
+                        <p class="card-text">${phone}</p>
+                        <small class="card-text">Thank you for joining with us</small>
+                        <br/>
+                        <a href="/" class="btn btn-primary">Confirm</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted mt-5">
-
-
         <!-- Section: Links  -->
         <section class="pt-4">
             <div class="container text-center text-md-start mt-5">
@@ -126,7 +68,7 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
+                            Company name
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -183,13 +125,12 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contact
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>New York, NY 10012, US</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i>
                             info@example.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p>+ 01 234 567 88</p>
+                        <p>+ 01 234 567 89</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -224,3 +165,5 @@
 </body>
 
 </html>
+
+`;
