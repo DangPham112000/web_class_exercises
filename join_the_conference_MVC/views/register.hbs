@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col">
+            <div class="h1 text-center">Join with us</div>
+            <form id="form-regis" action="/register" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="fullname">Fullname</label>
+                    <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Fullname"
+                        required>
+                    <div class="invalid-feedback">Please fill your name</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" required>
+                    <div class="invalid-feedback">Please fill your email</div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input name="phone" type="text" class="form-control" id="phone"
+                        placeholder="Enter your phone number" required>
+                    <div class="invalid-feedback">Please fill your phone</div>
+                </div>
+                <div class="form-group">
+                    <small id="help" class="form-text text-muted">We'll never share your information with anyone
+                        else.</small>
+                    <button type="submit" class="btn btn-primary float-right">Agree to join our Conference</button>
+                </div>
+                <a id="result"></a>
+            </form>
+        </div>
+    </div>
+
+</div>

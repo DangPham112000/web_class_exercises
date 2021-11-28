@@ -1,0 +1,1 @@
+exports.all = () => [{fullname: 'tester1', email: 'test@test', phone: '1900100test'}];
