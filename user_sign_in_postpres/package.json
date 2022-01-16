@@ -4,17 +4,21 @@
   "description": "",
   "main": "serverexp.js",
   "scripts": {
-    "start": "nodemon serverexp.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cookie-parse": "^0.4.0",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.1",
     "express-handlebars": "^6.0.2",
+    "express-handlebars-sections": "^1.0.1",
     "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
     "pg": "^8.7.1",
     "pg-promise": "^10.11.1",
     "sha.js": "^2.4.11"
